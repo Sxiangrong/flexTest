@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex 布局</title>
+    <style>
+        .container{
+            width: 600px;
+            display: flex;
+            background-color: antiquewhite;
+            box-shadow:  0px 2px 2px 0px rgba(9, 2, 4, 0.1);;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            margin: 15px;
+            background-color: coral;
+        }
+    </style>
+</head>
+<body>
+<h2>轴向是row时：</h2>
+<h3>flex-wrap: wrap--换行</h3>
+<div class="container" style="flex-direction: row;flex-wrap: wrap">
+    <div class="box">第一个</div>
+    <div class="box">第二个</div>
+    <div class="box">第三个</div>
+    <div class="box">第四个</div>
+    <div class="box">第五个</div>
+    <div class="box">第六个</div>
+</div>
+<h3>flex-wrap: nowrap--不换行</h3>
+<div class="container" style="flex-direction: row;flex-wrap: nowrap">
+    <div class="box">第一个</div>
+    <div class="box">第二个</div>
+    <div class="box">第三个</div>
+    <div class="box">第四个</div>
+    <div class="box">第五个</div>
+    <div class="box">第六个</div>
+</div>
+<h3>flex-wrap: wrap-reverse--换行，但是第一行在下方</h3>
+<div class="container" style="flex-direction: row;flex-wrap: wrap-reverse">
+    <div class="box">第一个</div>
+    <div class="box">第二个</div>
+    <div class="box">第三个</div>
+    <div class="box">第四个</div>
+    <div class="box">第五个</div>
+    <div class="box">第六个</div>
+</div>
+<h3>flex-direction:row-reverse 和 flex-wrap: wrap-reverse 的值的结合使用</h3>
+<div class="container" style="flex-direction: row-reverse;flex-wrap: wrap-reverse">
+    <div class="box">第一个</div>
+    <div class="box">第二个</div>
+    <div class="box">第三个</div>
+    <div class="box">第四个</div>
+    <div class="box">第五个</div>
+    <div class="box">第六个</div>
+</div>
+<h2 style="margin-top: 30px;">轴向是column时：</h2>
+<h3>flex-wrap: wrap</h3>
+<div class="container" style="height: 600px;flex-direction: column;flex-wrap: wrap">
+    <div class="box">第一个</div>
+    <div class="box">第二个</div>
+    <div class="box">第三个</div>
+    <div class="box">第四个</div>
+    <div class="box">第五个</div>
+    <div class="box">第六个</div>
+</div>
+<h3>flex-wrap: nowrap</h3>
+<div class="container" style="height: 600px;flex-direction: column;flex-wrap: nowrap">
+    <div class="box">第一个</div>
+    <div class="box">第二个</div>
+    <div class="box">第三个</div>
+    <div class="box">第四个</div>
+    <div class="box">第五个</div>
+    <div class="box">第六个</div>
+</div>
+<h3>flex-wrap: wrap-reverse</h3>
+<div class="container" style="height: 600px;flex-direction: column;flex-wrap: wrap-reverse">
+    <div class="box">第一个</div>
+    <div class="box">第二个</div>
+    <div class="box">第三个</div>
+    <div class="box">第四个</div>
+    <div class="box">第五个</div>
+    <div class="box">第六个</div>
+</div>
+</body>
+</html>

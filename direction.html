@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex 布局的方向</title>
+    <style>
+        .container{
+            width: 50%;
+            display: flex;
+            background-color: antiquewhite;
+            box-shadow:  0px 2px 2px 0px rgba(9, 2, 4, 0.1);
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            margin: 15px;
+            background-color: coral;
+        }
+    </style>
+</head>
+<body>
+    <!--flex-direction:row--是默认排列方式，也是最常用的排列方式-->
+    <h3>flex-direction:row--主轴为水平方向，从左向右排列</h3>
+    <div class="container" style="flex-direction: row">
+        <div class="box">第一个</div>
+        <div class="box">第二个</div>
+        <div class="box">第三个</div>
+    </div>
+    <h3>flex-direction:row-reverse--主轴为水平方向，从右向左排列</h3>
+    <div class="container" style="flex-direction: row-reverse">
+        <div class="box">第一个</div>
+        <div class="box">第二个</div>
+        <div class="box">第三个</div>
+    </div>
+    <h3>flex-direction:column--主轴为垂直方向，从上向下排列</h3>
+    <div class="container" style="flex-direction: column">
+        <div class="box">第一个</div>
+        <div class="box">第二个</div>
+        <div class="box">第三个</div>
+    </div>
+    <h3>flex-direction:column-reverse----主轴为垂直方向，从下往上排列</h3>
+    <div class="container" style="flex-direction: column-reverse">
+        <div class="box">第一个</div>
+        <div class="box">第二个</div>
+        <div class="box">第三个</div>
+    </div>
+</body>
+</html>

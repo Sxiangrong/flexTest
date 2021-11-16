@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>排练的顺序</title>
+    <style>
+        .container{
+            width: 80%;
+            height: 200px;
+            display: flex;
+            background-color: antiquewhite;
+            box-shadow:  0px 2px 2px 0px rgba(9, 2, 4, 0.1);
+            flex-direction: row;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            margin: 15px;
+            background-color: coral;
+        }
+    </style>
+</head>
+<body>
+<h3>默认</h3>
+<div class="container" style="">
+    <div class="box">第一个</div>
+    <div class="box">第二个</div>
+    <div class="box">第三个</div>
+    <div class="box">第四个</div>
+    <div class="box">第五个</div>
+</div>
+
+<h3>order:5--4--3--2--1</h3>
+<div class="container" >
+    <div class="box" style="order: 5">第一个</div>
+    <div class="box" style="order: 4">第二个</div>
+    <div class="box" style="order: 3">第三个</div>
+    <div class="box" style="order: 2">第四个</div>
+    <div class="box" style="order: 1">第五个</div>
+</div>
+
+<h3>order:2 和 4 交换--只对添加的order的item 做排练顺序</h3>
+<div class="container" >
+    <div class="box" >第一个</div>
+    <div class="box" style="order: 2">第二个</div>
+    <div class="box" >第三个</div>
+    <div class="box" style="order: 4">第四个</div>
+    <div class="box" >第五个</div>
+</div>
+<p><strong>当有俩个order的值相等时，按自己本身的值排列</strong></p>
+<div class="container" >
+    <!--这里有使俩个box 的order的值为3，style="order: 3-->
+    <div class="box" style="order: 3">第一个</div>
+    <div class="box" style="order: 3">第二个</div>
+    <div class="box" style="order: 2">第三个</div>
+    <div class="box" style="order: 4">第四个</div>
+    <div class="box" style="order: 1">第五个</div>
+</div>
+</body>
+</html>

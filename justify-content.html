@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主轴线上的对齐方式</title>
+    <style>
+        .container{
+            width: 50%;
+            background-color: antiquewhite;
+            box-shadow:  0px 2px 2px 0px rgba(9, 2, 4, 0.1);
+            display: flex;
+            flex-direction: row;
+        }
+        .main{
+            width: 50%;
+            height:600px;
+            background-color: antiquewhite;
+            box-shadow:  0px 2px 2px 0px rgba(9, 2, 4, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            margin: 15px;
+            background-color: coral;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>设置主轴为 row 时</h2>
+    <h3>justify-content: flex-start</h3>
+    <div class="container" style="justify-content: flex-start">
+        <div class="box">第一个</div>
+        <div class="box">第二个</div>
+        <div class="box">第三个</div>
+    </div>
+    <h3>justify-content: flex-end</h3>
+    <div class="container" style="justify-content: flex-end">
+        <div class="box">第一个</div>
+        <div class="box">第二个</div>
+        <div class="box">第三个</div>
+    </div>
+    <h3>justify-content:center</h3>
+    <div class="container" style="justify-content: center">
+        <div class="box">第一个</div>
+        <div class="box">第二个</div>
+        <div class="box">第三个</div>
+    </div>
+    <h3>两端对齐justify-content: space-between：先俩边填边，在平均分配剩余空间</h3>
+    <div class="container" style="justify-content: space-between;flex-wrap: wrap">
+        <div class="box">第一个</div>
+        <div class="box">第二个</div>
+        <div class="box">第三个</div>
+    </div>
+    <div class="container" style="justify-content: space-between;">
+        <div class="box">第一个</div>
+        <div class="box">第二个</div>
+
+    </div>
+    <h3>justify-content: space-around：平均分配剩余空间</h3>
+    <div class="container" style="justify-content: space-around;flex-wrap: wrap">
+        <div class="box">第一个</div>
+        <div class="box">第二个</div>
+        <div class="box">第三个</div>
+        <div class="box">第四个</div>
+        <div class="box">第五个</div>
+        <div class="box">第六个</div>
+        <div class="box">第七个</div>
+    </div>
+
+
+
+    <h2>设置主轴为 column 时,必须设置高度</h2>
+    <h3>justify-content: center</h3>
+    <div class="main" style="justify-content: center;">
+        <div class="box">第一个</div>
+        <div class="box">第二个</div>
+        <div class="box">第三个</div>
+    </div>
+
+
+
+</body>
+</html>

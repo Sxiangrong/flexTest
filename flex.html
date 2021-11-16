@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex</title>
+    <style>
+        .container{
+            width: 50%;
+            height: 200px;
+            display: flex;
+            background-color: antiquewhite;
+            box-shadow:  0px 2px 2px 0px rgba(9, 2, 4, 0.1);;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            margin: 15px;
+            background-color: coral;
+        }
+    </style>
+</head>
+<body>
+<p><strong>flex-grow + flex-shrink + flex-basis = flex</strong></p>
+<h3>flex:默认值 0 1 auto--不放大，会缩小</h3>
+<div class="container" style="">
+    <div class="box">第一个</div>
+    <div class="box">第二个</div>
+    <div class="box">第三个</div>
+</div>
+<h3>flex:auto(1 1 auto)--等分放大缩小</h3>
+<div class="container" >
+    <div class="box">第一个</div>
+    <div class="box" style="flex:auto">第二个</div>
+    <div class="box">第三个</div>
+
+</div>
+<h3>flex:none(0 0 auto)--不放大不缩小</h3>
+<div class="container" >
+    <div class="box">第一个</div>
+    <div class="box" style="flex:none">第二个</div>
+    <div class="box">第三个</div>
+
+</div>
+<h3>flex:1 0 auto---会放大，不会缩小</h3>
+<div class="container" >
+    <div class="box">第一个</div>
+    <div class="box" style="flex:1 0 auto">第二个</div>
+    <div class="box">第三个</div>
+</div>
+</body>
+</html>
